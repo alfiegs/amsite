@@ -1,7 +1,6 @@
 {
   "name": "amsite",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +8,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
-  }
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "install": "^0.12.2",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfiegs/amsite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alfiegs/amsite/issues"
+  },
+  "homepage": "https://github.com/alfiegs/amsite#readme",
+  "description": ""
 }

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Arctic Monkeys</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Geo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <% include partials/structure/navbar.ejs %>
+
+    <!-- MAIN SECTION -->
+    <div class="container-fluid">
+        <div class="row" style="height: 82vh; overflow: hidden">
+            <div class="col-sm-5" style="background-image: url(../images/TBHC.jpg); background-size: 100%"></div>
+            <div class="col-sm-3" style="background-image: url(../images/bg.jpeg)">
+                <h1 class="feedback-form-title">Thoughts on the new album?</h1>
+                <form class="feedback-form">
+                    <div class="form-group">
+                        <label for="feedback-form-name">Name</label>
+                        <input type="text" class="form-control" id="feedback-form-name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback-form-title">Title</label>
+                        <input type="text" class="form-control" id="feedback-form-title"
+                            placeholder="Title of your feedback">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback-form-message">Message</label>
+                        <textarea type="text" placeholder="Enter your message, then hit the submit" class="form-control"
+                            id="feedback-form-message" rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="">Submit</button>
+                </form>
+            </div><!-- primary -->
+            <aside class="col-sm-4" style="background-color: lightgray">
+                <div class="maincontent feedback">
+                    <h2 class="article-title">Recent Feedback</h2>
+                    <div class="feedback-messages"></div>
+                    <!-- feedback messages appear here --> 
+                </div>
+            </aside><!-- secondary -->
+        </div>
+    </div><!-- container -->
+
+
+    <!-- FOOTER -->
+    <% include partials/structure/footer.ejs %>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="/js/feedback.js"></script>
+    <!-- link to public JS file -->
+
+</body>
+
+</html>

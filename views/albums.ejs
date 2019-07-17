@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Albums</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Geo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+  <body>
+    <!-- NAVBAR -->
+    <% include partials/structure/navbar.ejs %> 
+
+
+
+    <div id="all-album-container" class="container-fluid">
+            <!-- MAIN SECTION -->
+            <% albums.forEach(album => { %>
+            <div id="" class="row" style="overflow: hidden">
+                
+                    <div class="col-7">
+                        <h3 class="site-font"><%= album.albumname %> </h3>
+                        <p class="site-font"><%= album.year %> </p>
+                        <br>
+                        <img class="album-image" src="images/<%= album.artwork %>" alt="">
+                        <br>
+                    </div>
+                    <div class="col-5">
+                        <div style="height: 20vh">
+
+                        </div>
+                        <ol>
+                        <% album.tracklist.forEach(track => {%>
+                            <li><%=track%></li>
+                        <%})%> 
+                        </ol>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col" style="height: 10vh"></div>
+            </div>
+            <% }) %>
+
+
+
+
+
+            <!-- FOOTER -->
+            <% include partials/structure/footer.ejs %> 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

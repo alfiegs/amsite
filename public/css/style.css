@@ -1,0 +1,66 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-custom {
+    font-family: 'Geo', sans-serif;
+}
+
+#main {
+    height: 90vh;
+    background-image: url("../images/bg.jpeg");
+    background-size: 100vw;
+}
+
+#footer {
+    height: 10vh;
+}
+
+#footer-text {
+    font-family: 'Geo', sans-serif;
+    color: rgb(155, 131, 15);
+
+}
+
+.carousel{
+    width: 100%;
+    position: absolute;
+    top: -12vh;
+}
+
+#car-container{
+    position: relative;
+}
+
+.gold{
+    color: rgb(155, 131, 15);
+}
+
+
+
+/* albums */
+
+.album-image{
+    width: 50vw;
+}
+
+#all-album-container{
+    background-image: url("../images/bg.jpeg");
+    background-size: 200vw;
+
+}
+
+.site-font{
+    font-family: 'Geo', sans-serif;
+}
+
+
+
+/* feedback */
+
+.feedback-delete{
+    background-color: rgb(155, 131, 15);
+}
+.feedback-name{
+}
